@@ -40,4 +40,18 @@ public class PasswordChecker {
         }
     return lowerCase && specialChar && upperCase && passwordLength && oneDigit && existingPassword;
     }
+
+    public static boolean passwordIsOk(String password){
+        int pass = 0;
+        if(!password.isEmpty() && password.length() > 8 && password.matches(".*[a-z].*" )) {
+            pass = pass + 1;
+
+            System.out.println("passwordIsOk");
+        }
+        else {
+            System.out.println("password is never ok");
+        }
+        return true;
+}
+
 }

@@ -8,7 +8,10 @@ public class Main {
         String pass = input.nextLine();
 
         try {
+
             PasswordChecker.password_is_valid(pass);
+
+            PasswordChecker.passwordIsOk(pass);
             System.out.println();
 
         } catch (Exception e) {
